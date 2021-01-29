@@ -68,11 +68,11 @@ namespace API.Controllers
             try
             {
                 var getUser = await request.Add(id, sum);
-                return Ok($"Произошла ошибка: {ex.Message}");
+                return Ok($"Успешное пополнение. Сумма на счету: {getUser.Deposit}");
             }
             catch(Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest($"Произошла ошибка: {ex.Message}");
             }
         }
 
@@ -83,7 +83,7 @@ namespace API.Controllers
             {
                 var request = new DepositAction(_baseRepo, _context);
                 var getUser = await request.Withdraw(id, sum);
-                return Ok("Успешное списание");
+                return Ok("Успешное списание. Сумма на счету: {getUser.Deposit}");
             }
             catch (Exception ex)
             {

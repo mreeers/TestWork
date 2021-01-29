@@ -23,31 +23,45 @@ namespace Application
         public async Task<User> Add(int id, decimal sum)
         {
             var user = _baseRepo.GetUser(id);
+            
+            if(sum < 0)
+            {
+                throw new Exception("Сумма не может быть меньше 0");
+            }
+            else
+            {
+                user.Deposit = user.Deposit + sum;
 
-            user.Deposit = user.Deposit + sum;
+                _baseRepo.Update(user);
+                await _baseRepo.SaveAllAsync();
 
-            _baseRepo.Update(user);
-            await _baseRepo.SaveAllAsync();
-
-            return user;
+                return user;
+            }
         }
 
         public async Task<User> Withdraw(int id, decimal sum)
         {
             var user = _baseRepo.GetUser(id);
-            var commission = (sum * 0.5M) / 100;
-
-            user.Deposit = user.Deposit - sum - commission;
-
-            if(user.Deposit < 0)
+            if (sum < 0)
             {
-                throw new Exception("Недостаточно средств");
+                throw new Exception("Сумма не может быть меньше 0");
             }
             else
             {
-                _baseRepo.Update(user);
-                await _baseRepo.SaveAllAsync();
-                return user;
+                var commission = (sum * 0.5M) / 100;
+
+                user.Deposit = user.Deposit - sum - commission;
+
+                if (user.Deposit < 0)
+                {
+                    throw new Exception("Недостаточно средств");
+                }
+                else
+                {
+                    _baseRepo.Update(user);
+                    await _baseRepo.SaveAllAsync();
+                    return user;
+                }
             }
         }
 
