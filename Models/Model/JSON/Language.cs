@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace API
+namespace Models.Model.JSON
 {
     public partial class Language
     {

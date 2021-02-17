@@ -1,0 +1,514 @@
+{
+  "app": {
+    "menu": {
+      "p-1": "Аналитика",
+      "p-2": "Мой аккаунт",
+      "p-3": "Мои кошельки",
+      "p-4": "Создать кошелек",
+      "p-5": "Отправить",
+      "p-6": "Получить",
+      "p-7": "Выйти",
+      "p-8": "Счета",
+      "p-9": "Поддержка",
+      "p-10": "Обменять",
+      "p-11": "Кредит",
+      "p-12": ""
+    },
+    "header": {
+      "sync": "Синхронизация",
+      "synced": "Синхронизировано",
+      "tab-1": "Мой аккаунт",
+      "tab-2": "Мои кошельки",
+      "exit": "Выйти"
+    },
+    "modals": {
+      "in-development-modal": {
+        "title": "Данный функционал находится в разработке!"
+      },
+      "add-wallet-modal": {
+        "title": "Новый кошелек",
+        "name-msg": "Введите имя кошелька",
+        "select-currency": "Выберите валюту"
+      },
+      "deposit-modal": {
+        "title": "Получение средств",
+        "sender": "Аккаунт отправителя",
+        "receiv-address": "Адрес кошелька",
+        "generate": "Сгенерировать",
+        "copy": "Скопировать",
+        "title-2": "Получение средств",
+        "no-wallets": "У вас пока что нет кошельков на ввод средств",
+        "create-wallet": "Создать кошелек"
+      },
+      "withdrawal-modal": {
+        "title": "Отправка средств",
+        "sender-account": "Аккаунт отправителя",
+        "receiver-address": "Адрес получателя",
+        "enter-address": "Введите адрес",
+        "enter-receiver-address": "Введите адрес получателя",
+        "enter-receiver-addr": "Введите адрес получателя",
+        "amount": "Сумма перевода",
+        "send-currency": "Отправка средств",
+        "no-amount": "На ваших кошельках недостаточно средств",
+        "deposit": "Пополнить",
+        "select-wallet": "Выберите кошелёк"
+      }
+    },
+    "pages": {
+      "dashboard": {
+        "favourite-wallet": "Избранные кошельки",
+        "no-favourite": "У вас нет избранных кошельков",
+        "transactions-last": "Недавние транзакции",
+        "transactions-last-no-data": "У вас нет недавних транзакций",
+        "balance": "Всего на балансе",
+        "ex-rate": {
+          "total-balance": "Общий баланс в {currency}",
+          "balance": "Баланс {currency}"
+        },
+        "fee-paid": "Комиссии заплачено",
+        "for-week": "за неделю",
+        "for-month": "за месяц",
+        "for-year": "за год"
+      },
+      "profile": {
+        "no-verified": "Неверифицирован",
+        "verified": "Верифицирован",
+        "last-transactions": "Недавние транзакции",
+        "no-last-transactions": "У вас нет недавних транзакций",
+        "security": "Безопасность",
+        "in-progress": "В разработке",
+        "change-pass-form": {
+          "title": "Сменить пароль",
+          "change": "Изменить",
+          "error": "Произошла ошибка! Попробуйте снова через некоторое время",
+          "success": "Пароль был успешно изменён",
+          "old-pass-msg": "Введите свой старый пароль!",
+          "new-pass-msg": "Введите новый пароль",
+          "min-msg": "Минимум 8 символов",
+          "max-msg": "Максимум 40 симолов",
+          "repeat-pass-msg": "Повторите новый пароль",
+          "no-diff-pass": "Пароли должны совпадать"
+        },
+        "tfa-card": {
+          "tfa-connect": {
+            "title": "Подключение 2-х этапной аутентификации",
+            "connect": "Подключить",
+            "secret": "Секрет (для ручного добавления аутентификатора)",
+            "code": "Код с приложения аутентификатора",
+            "enter-code": "Введите код с приложения аутентификатора"
+          },
+          "tfa-delete": {
+            "title": "Отключение 2-х этапной аутентификации",
+            "code": "Код с приложения аутентификатора",
+            "auth-code-enter": "Введите код с приложения аутентификатора",
+            "btn": "Отключить"
+          }
+        }
+      },
+      "wallets": {
+        "title": "Здесь располагаются ваши кошельки",
+        "sub-title": "Вы можете добавить кошелек с необходимой вам валютой.",
+        "favourite-only": "Показывать только избранное",
+        "show-empty": "Показывать нулевые балансы",
+        "account-table": {
+          "name": "Имя",
+          "current": "Текущий",
+          "created-at": "Дата создания",
+          "receive": "Получить",
+          "send": "Отправить"
+        },
+        "to-favourite": "В избранное",
+        "no-data": "Данные для отображения отсутствуют",
+        "add-wallet": "Добавить кошелек",
+        "last-deposits-table": {
+          "title": "Последние депозиты",
+          "type": null,
+          "tx-hash": "Хеш транзакции",
+          "amount": "Сумма",
+          "fee": null,
+          "created-at": "Дата создания",
+          "status": "Статус",
+          "no-data": "Данные для отображения отсутствуют",
+          "currency": "Валюта"
+        },
+        "last-withdrawals-table": {
+          "title": "Последние выводы",
+          "type": null,
+          "tx-hash": "Хеш транзакции",
+          "amount": "Сумма",
+          "fee": null,
+          "created-at": "Дата создание",
+          "status": "Статус",
+          "no-data": "Данные для отображения отсутствуют",
+          "currency": "Валюта"
+        }
+      },
+      "wallet": {
+        "receive": "Получить",
+        "send": "Отправить",
+        "transaction-table": {
+          "title": "Транзакции",
+          "type": "Тип",
+          "tx-hash": "Хеш транзакции",
+          "amount": "Количество",
+          "fee": "Коммисия",
+          "created-at": "Дата создания",
+          "status": "Статус",
+          "no-data": "Данные для отображения отсутствуют",
+          "currency": null
+        },
+        "chart": {
+          "w": "за неделю",
+          "m": "за месяц",
+          "y": "за год"
+        }
+      }
+    }
+  },
+  "server": {
+    "errors": {
+      "default-error": "Ошибка!",
+      "wrong-name-or-password": "Неправильный логин или пароль",
+      "no-crypto": "Недостаточное количество криптовалюты",
+      "min-amount": "Минимальное количество для вывода",
+      "imposible-tx": "Невозможно создать транзакцию для этого аккаунта",
+      "error-tfa": "Неверный проверочный код",
+      "email-incorrect": "Пожалуйста введите email в правильном формате",
+      "login-already-exist": "Такой логин уже зарегистрирован",
+      "email-already-exists": "Такой email уже зарегистрирован",
+      "min-pass": "Пароль должен иметь минимум 8 символов",
+      "empty-email": "Email не может быть пустым",
+      "user-not-found": "Пользователь не найден",
+      "reg-error": "Возникла ошибка при регистрации",
+      "error-code": "Неверный проверочный код",
+      "error-on-tfa": "Возникла ошибка при подключении 2-х факторной аутентификации",
+      "no-name-crypto": "Неизвестная криптовалюта",
+      "account-not-found": "Аккаунт не найден",
+      "only-one-currencie": "Только одна валюта может быть использована для пополнения",
+      "once-eth": "Для ETH возможно только один раз сгенерировать адрес",
+      "invalid-sign": "Неверная подпись",
+      "field-empty": "Поле не должно быть пустым",
+      "account-already-exists": "Аккаунт уже существует",
+      "account-not-exists": "Аккаунт не существует",
+      "error-create-account": "Возникла ошибка при создании аккаунта",
+      "add-account-merch": "Сначала добавьте аккаунт в настройках магазина"
+    }
+  },
+  "land": {
+    "home": {
+      "secure-wallet": "Надежный, приватный и безопасный криптокошелек",
+      "study-wallet": "Разбираемся с сервисом за 5 минут, чтобы пользоваться постоянно.",
+      "connect-wallet": "Подключить кошелек",
+      "enter": "Войти",
+      "isa-using": "Начислений за пользование",
+      "support-currency": "Мы поддерживаем :",
+      "and-more": "И еще 1965 валют...",
+      "networks": "Мы в сетях :",
+      "multifunct": "APlus Wallet \u2014 это универсальный и многофункциональный кошелёк, который поддерживает такие известные криптовалюты, как Bitcoin, Ethereum, Ripple, Litecoin, Monero, а также более 1900 других токенов и монет. Полностью приватный и безопасный с высокой скоростью транзакций. ",
+      "sarnado-wallet": "Кроме того, \u0022APlus Wallet\u0022 является кошельком системы \u0022Sarnado\u0022, которая объединяет в себе 6 криптовалютных сервисов, среди которых \u0022Escrow Service Garant\u0022 и криптовалютный процессинг \u0022BigFootBridge\u0022. Также, на кошельке генерируются токены \u0022ISA\u0022, которые вы зарабатываете, используя сервисы системы \u0022Sarnado\u0022.",
+      "in-your-home": "APlus Wallet в каждый дом",
+      "work-block-1": {
+        "title": "Как мы работаем?",
+        "text": "Bitcoin Mining is a peer-to-peer computer process used to secure and verify bitcoin transactions\u2014ayments from one user to another on a decentralized network."
+      },
+      "work-block-2": {
+        "title": "Кошелек под рукой",
+        "text": "Скачайте приложение кошелька \u0022Aplus\u0022 и пользуйтесь сервисом в любое время, где бы вы не находились. Только самые нужные функции! Все, чтобы было удобно."
+      },
+      "work-block-3": {
+        "title": "Приватный и безопасный",
+        "text": "Мы не собираем информацию о пользователях, поэтому вы можете быть спокойны - о ваших действиях знаете только вы! А средства ранятся на защищенных нодах. "
+      },
+      "work-block-4": {
+        "title": "Покупка и продажа",
+        "text": "Вы можете просто и быстро купить и продать криптовалюты в личном кабинете кошелька, воспользовавшись нашим сервисом или сервисами наших партнеров."
+      },
+      "work-block-5": {
+        "title": "Простой интерфейс",
+        "text": "Пользовательский интерфейс программного кошелька прост и понятен интуитивно. Заводите кошельки для криптовалюты, принимайте и отправляйте средства. "
+      },
+      "tocken-block-1": {
+        "title": "Подробная статистика и возможности",
+        "text": "APlus Wallet имеет самую широкую статистику и инструменты для аналитики. Вы можете не только хранить и обменивать, но и продавать - покупать криптовалюту в Личном кабинете. Также, кошелек можно подключать к различным сервисам посредством нашего API. "
+      },
+      "tocken-block-2": {
+        "title": "Начисления за использование",
+        "text": "Каждое совершенное действие в кошельке, начиная с регистрации, вознаграждается! Вы получаете на счет наши токены ISA, которые в дальнейшем вы можете потратить в нашем магазине или сохранить, ожидая окончания периода депонирования - в назначенную дату превратив их в реальные средства и осуществить вывод. ",
+        "start-gift": "Старт акции :",
+        "end-gift": "Завершение :",
+        "current-cran": "Текущая раздача :",
+        "token": "Token :",
+        "ex-rate": "Обменный курс :",
+        "wallet": "APlus Wallet :"
+      },
+      "tocken-block-3": {
+        "title": "Начислений за использование",
+        "open-wallet": "Открыть кошелек",
+        "current-rate": "Текущий курс",
+        "volume": "Объем",
+        "acceptable-currency": "Acceptable Currency"
+      },
+      "mobile-app": "Скачайте мобильное приложение",
+      "mobile-desc": "Мобильное приложение позволяет быстро и удобно следить за поступлением и движением средств. Push уведомления на события, простой и понятный интерфейс, а также быстрое взаимодействия с другими криптовалютными сервисами \u0022Sarnado\u0022.",
+      "mobile-desc-2": "Регулярные обновления и улучшения, быстрый доступ к поддержке, высокая скорость работы. Отправляйте и получайте и обменивайте криптовалюты в своем мобильном телефоне. Безопасно и удобно. ",
+      "text-secure": "Безопасность",
+      "desc-secure": "Одним из самых важных пунктов характеризующих кошелек \u0022APlus\u0022 является безопасность. Помимо мноуровневой системы защиты мы предлагаем вам защитить ваш кошелек дополнительно и самостоятельно. Для этого есть целый набор инструментов",
+      "email-verify": "Email верификация",
+      "sms-verify": "SMS на личный номер",
+      "yubi-key": "YubiKey (ЮбиКей)",
+      "lets-start": "Приступим",
+      "back-phrase": "Резервная фраза",
+      "service-work": "Работа сервиса",
+      "service-work-text": "За несколько лет плотной работы сервис видоизменялся. Добавлялись новые функции и уровни защиты. Как это было?",
+      "road-map": {
+        "date-1": {
+          "dname": "Апрель 2019",
+          "desc": "Разработка концепции приложения"
+        },
+        "date-2": {
+          "dname": "Июль 2019",
+          "desc": "Организация работы серверов"
+        },
+        "date-3": {
+          "dname": "Август 2019",
+          "desc": "Поднятие Ноды Bitcoin/Ethereum "
+        },
+        "date-4": {
+          "dname": "Январь 2020",
+          "desc": "Выход Альфа версии"
+        },
+        "date-5": {
+          "dname": "Май 2020",
+          "desc": "Релиз безопасности 1.0"
+        },
+        "date-6": {
+          "dname": "Август 2020",
+          "desc": "Разработка концепции приложения"
+        },
+        "date-7": {
+          "dname": "Октябрь 2020",
+          "desc": "Выход версии 1.0 на AppStore"
+        },
+        "date-8": {
+          "dname": "Декабрь 2020",
+          "desc": "Выход версии 1.2 приложения"
+        },
+        "date-9": {
+          "dname": "Апрель 2021",
+          "desc": "Возможность оплаты покупок через приложение"
+        },
+        "date-10": {
+          "dname": "Июль 2021",
+          "desc": "Прямая покупка криптовалюты"
+        }
+      },
+      "our-team": "Наша команда",
+      "our-team-desc": "Мы регулярно занимаемся обновлениями и улучшениями работы сервиса, а наша служба поддержки готова прийти к вам на помощь и работает 24/7. ",
+      "about": "About",
+      "team-1": {
+        "name": "Андрей Фролов",
+        "descr": "",
+        "position": "CEO OWNER",
+        "port-1": "В разработке и реализации проектов с 2001 года. За период 2001 - 2020 запущено 224 сайта компаний различных направлений в России, Украине, Чехии, Германии, Швейцарии и Испании.",
+        "port-2": "С 2000 года руководитель компании с штатом 18\u002B человек. ",
+        "port-3": "Специализация: Руководитель проектов, проектирование программных интерфейсов, разработка MVC концепции, верстка, промо "
+      },
+      "team-2": {
+        "name": "Илья Павлухин",
+        "descr": "",
+        "position": "Software Developer",
+        "port-1": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+        "port-2": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+        "port-3": null
+      },
+      "team-3": {
+        "name": "Алекс Сиваш",
+        "descr": "",
+        "position": "Blockchain Developer",
+        "port-1": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+        "port-2": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+        "port-3": null
+      },
+      "team-4": {
+        "name": "Алексей Задворный",
+        "descr": "",
+        "position": "Blockchain App Developer",
+        "port-1": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+        "port-2": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+        "port-3": null
+      },
+      "support": {
+        "title": "Техническая поддержка",
+        "team-1": {
+          "name": "Юлия Фролова",
+          "descr": "",
+          "position": "Support",
+          "port-1": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-2": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-3": null
+        },
+        "team-2": {
+          "name": "Максим Лукашов",
+          "descr": "",
+          "position": "Support",
+          "port-1": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-2": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-3": null
+        },
+        "team-3": {
+          "name": "Ольга Михайлова",
+          "descr": "",
+          "position": "Support",
+          "port-1": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-2": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-3": null
+        },
+        "team-4": {
+          "name": "Алексей Задворный",
+          "descr": "",
+          "position": "Blockchain App Developer",
+          "port-1": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-2": "Founder of Venus Media Ltd and Owner of leading website for affiliates in the entertainment industry TakeBucks, he is a videographer, photographer and producer with a big number of successful entrepreneurships under his name over the last 18 years.",
+          "port-3": null
+        }
+      },
+      "faq": "Частозадаваемые вопросы",
+      "faq-desc": "Наверняка у вас появятся вопросы в процессе использования. Наша служба поддержки работает 24/7 и готова ответить на все ваши вопросы. Взаимодействие происходит после регистрации в Личном кабинете.",
+      "main": "Основные",
+      "cran": "Начисления",
+      "security": "Безопасность",
+      "free-service": "Есть ли у APlus плата за отправку или получение?",
+      "free-service-descr": "Практически все транзакции блокчейна требуют комиссии сети или майнера (за некоторыми исключениями). За исключением комиссий, которые идут в сеть, Aplus не взимает комиссию за отправку или получение. Также, APlus не берет комиссии за вывод средств на сторонние аккаунты.",
+      "no-verify": "Есть ли верификация на Aplus?",
+      "no-verify-desc": "Верификация на кошельке APlus Wallet необязательна, но все же она есть и при желании вы можете ее пройти. Это поможет нам и вам в дальнейшем решить вопросы с ошибочными транзакциями или восстановлением утерянных данных. Решать вам.",
+      "merch-payment": "Могу ли я принимать платежи со своего магазина?",
+      "merch-payment-answ": "Можете! Но для этого советуем использовать на криптопроцессинг \u0022BigFootBridge\u0022, где вы сможете не только принимать криптовалюты в своем магазине, но и вести полный учет транзакций. Также, пользоваться аналитикой и прочими инструментами для ведения бизнес - учета.",
+      "crypto-buy": "Могу ли я купить криптовалюту у вас?",
+      "crypto-buy-answ": "Да, можете. Как напрямую с нашего сервиса, так и у сторонних партнеров. Комиссии и условия в Личном кабинете.",
+      "get-crypto": "Как я могу получить криптовалюту?",
+      "get-crypto-answ": "Как и традиционные банковские переводы, получение активов блокчейна работает как номера счетов. После того, как вы нажмете кнопку получения, APlus покажет ваш крипто-адрес. Как и номер банковского счета, вы даете этот адрес для получения криптовалюты плательщику.",
+      "tx-id": "Как мне найти идентификатор транзакции?",
+      "tx-id-answ": "Идентификатор вашей транзакции (txid, tx hash) находится в каждом из ваших кошельков активов. Для каждого выполняемого действия (отправка и получение) существует один идентификатор транзакции.",
+      "btc-lost": "What happens when bitcoins are lost?",
+      "btc-lost-answ": "While profits are possible trading cryptocurrencies, so are losses. My first year involved me spending hundreds of hours trading Bitcoin with a result of losing over $5,000 with nothing to show for it. Simply trading digital currencies is very similar to gambling because no one really knows what is going to happen next although anyone can guess! While I was lucky to do nothing expect lose money when I started, the worst thing that can happen is to get lucky right away and get a big ego about what an amazing cryptocurrency trader we are.",
+      "invest": "Where is the invest my bitcoin?",
+      "invest-answ": "Before Steem I was all in an another altcoin and really excited about it. When I first bought the price was low and made payments to me every week just for holding it. As I tried to participate in the community over the next several months, I was consistently met with a mix of excitement and hostility. When I began talking openly about this, the negative emotions won over in the community and in me. Originally I had invested and been happy to hold no matter what the price which quickly went up after I bought it.",
+      "what-isa": "Что такое токен ISA?",
+      "what-isa-answ": "Это Utility Token, который используется в нашей системе для внутренних расчетов. Также, токен работает в качестве средства обеспечения на предстоящем ITO нашей компании. Гарантом конвертации токена ISA в обеспечение является компания \u0022Sarnado\u0022, которая хранит товары и предоставляет услуги сервисов.",
+      "token-cran-why": "За что начисляются токены?",
+      "token-cran-why-answ": "Токены начисляются за все операции произведенные в кошельке, включая регистрацию. Подробности, а также таблицу начислений вы можете посмотреть в Личном кабинете в разделе \u0022Начисления\u0022.",
+      "where-tokens": "Где хранятся токены?",
+      "where-tokens-answ": "С нашей стороны токены хранятся на собственной ноде компании \u0022Sarnado\u0022. Вам токены начисляются на кошелек ISA, который вы можете контролировать через Личный кабинет или приложение \u0022APlus Wallet\u0022. Все сервисы компании \u0022Sarnado\u0022 имеют единый аккаунт, поэтому ваши начисления вы будете видеть во всех кабинетах наших сервисов.",
+      "can-get-isa": "Могу ли я получить за токен реальные деньги?",
+      "can-get-isa-answ": "Можете. По окончанию периода депонирования, который заканчивается в 2023 году. О точной дате будет объявлено заранее.",
+      "where-send": "Где я могу потратить токен?",
+      "where-send-answ": "Начисленные токены вы можете потратить в нашем магазине \u0022Sarnado e-commerce\u0022, где вы можете приобрести всевозможные товары из раздела Аксессуары или Электроника. Магазин находится по адресу https://shop.sarnado.club Мы отправляем товары в любую точку мира. Помимо покупки за токены, доступна оплата криптовалютой.",
+      "trades-token": "Торгуется ли токен на бирже?",
+      "trades-token-isa": "Компания \u0022Sarnado\u0022 разработала собственную биржу об открытии которой мы обязательно сообщим. Внутренним токеном как раз будет являться токен ISA. О листинге на сторонних биржах пока информации нет.",
+      "depon-period": "Каков период депонирования токена?",
+      "depon-period-answ": "Период депонирования токена ISA 2 года. О точной дате завершения мы сообщим заранее.",
+      "token-emission": "Какова эмиссия токена?",
+      "token-emission-answ": "Эмиссия токена 50 000 000 ISA",
+      "lost-comp": "Что если мой компьютер потерян или украден?",
+      "lost-comp-answ": "Ничего страшного если у вас есть секретная фраза из 12 слов, вы всегда сможете восстановить доступ к своим средствам. Когда вы выполните процесс резервного копирования в APlus, вы получите секретную фразу из 12 слов. Если вы сохраните свою резервную информацию в безопасности, вы всегда сможете восстановить доступ к своим средствам.",
+      "lost-pass": "Как мне получить доступ к кошельку, если я забыл пароль??",
+      "lost-pass-answ": "Если вы забыли пароль для APlus, не волнуйтесь! Помните секретную фразу восстановления из 12 слов, резервную копию которой вы сохранили в безопасном и суперсекретном месте? Ну вот тут и пригодится!",
+      "tfa-sup": "APlus поддерживает двухфакторную аутентификацию?",
+      "tfa-sup-answ": "ДА! APlus поддерживает дополнительную аутентификацию транзакций с помощью одобрения третьей стороны. Вы можете воспользоваться сервисами, которые мы предлагаем вам в Личном кабинете, чтобы защитить свой аккаунт.",
+      "is-ver": "Есть ли верификация на Aplus?",
+      "is-ver-answ": "Верификация на кошельке APlus Wallet необязательна, но все же она есть и при желании вы можете ее пройти. Это поможет нам и вам в дальнейшем решить вопросы с ошибочными транзакциями или восстановлением утерянных данных. Решать вам.",
+      "secure-pass": "Как установить безопасный пароль?",
+      "secure-pass-answ": "Лучший пароль - это случайный пароль. И лучший способ создать их - использовать специальное приложение для управления паролями, например 1Password, LastPass или KeePass. Эти приложения могут создавать случайные пароли длиной до 64 символов. А поскольку они разработаны с учетом требований безопасности, вы можете быть уверены, что ваши пароли в безопасности.",
+      "illegal-crypto": "Is Bitcoin useful for illegal activities?",
+      "illegal-crypto-answ": "Bitcoin is money, and money has always been used both for legal and illegal purposes. Cash, credit cards and current banking systems widely surpass Bitcoin in terms of their use to finance crime. Bitcoin can bring significant innovation in payment systems and the benefits of such innovation are often considered to be far beyond their potential drawbacks.",
+      "regulate-crypto": "Can Bitcoin be regulated?",
+      "regulate-crypto-answ": "The Bitcoin protocol itself cannot be modified without the cooperation of nearly all its users, who choose what software they use. Attempting to assign special rights to a local authority in the rules of the global Bitcoin network is not a practical possibility.",
+      "tax-crypto": "What about Bitcoin and taxes?",
+      "tax-crypto-answ": "Bitcoin is not a fiat currency with legal tender status in any jurisdiction, but often tax liability accrues regardless of the medium used. There is a wide letiety of legislation in many different jurisdictions which could cause income, sales, payroll, capital gains, or some other form of tax liability to arise with Bitcoin.",
+      "partners": "Наши партнеры",
+      "connects": "Свяжитесь с нами",
+      "email-contact": "Если возникли сложности - обязательно сообщите нам на email. Мы решим все возникшие вопросы.",
+      "address": "Address",
+      "address-real": "Slovakia, Bratislava, Andreja Plavku 12 ",
+      "phone": "Phone",
+      "email-id": "Email-id",
+      "follow-us": "Следите за нами",
+      "message-us": "Оставьте сообщение",
+      "name": "Ваше имя *",
+      "you-mail": "Ваш Email *",
+      "subject": "Предмет обращения",
+      "you-message": "Ваше сообщение *",
+      "send": "Отправить",
+      "submit-message": "Submit Your Message!",
+      "contact-form": {
+        "name-imp": "Ваше имя обязательно к заполнению",
+        "email-imp": "Ваш email обязателен к заполнению",
+        "invalid-email": "Неверный формат email адреса",
+        "max-symb": "Максимальная длина 100 символов",
+        "text-imp": "Текст обращения обязателен к заполнению",
+        "max-250": "Максимальная длина 250 символов"
+      }
+    },
+    "header": {
+      "menu": {
+        "p-1": "Главная",
+        "p-2": "О нас",
+        "p-3": "Как мы работаем?",
+        "p-4": "Безопасность",
+        "p-5": "Развитие",
+        "p-6": "Команда",
+        "p-7": "FAQ",
+        "p-8": "Контакты",
+        "p-9": "Войти",
+        "p-10": "",
+        "p-11": null,
+        "p-12": null
+      }
+    },
+    "login": {
+      "enter": "Вход в кошелек",
+      "enter-2": "Home",
+      "hello": "Добро пожаловать",
+      "enter-to-acc": "Войдите в свой аккаунт",
+      "enter-email": "Введите логин или email пользователя",
+      "password": "Пароль",
+      "enter-pass": "Введите пароль",
+      "tfa-code": "Код с двухфакторной аутентификации",
+      "tfa-code-2": "Введите код с приложения аутентификатора",
+      "enter-3": "Войти",
+      "fogget-password": "Забыли пароль?",
+      "noaccount": "Еще нет аккаунта?",
+      "registr": "Зарегистрироваться",
+      "loginormail": "Логин или e-mail"
+    },
+    "register": {
+      "reg": "Регистрация",
+      "home": "Home",
+      "reg-2": "Регистрация",
+      "create-account": "Создайте свой бесплатный аккаунт",
+      "enter-username": "Введите имя пользователя",
+      "enter-email": "Введите email",
+      "enter-name": "Введите ваше имя",
+      "enter-pass": "Введите пароль",
+      "min-smbl": "Минимальная длина пароля 8 символов",
+      "max-smbl": "Максимальная длина пароля 40 символов",
+      "accept": "Я согласен (на) с Условиями работы сервиса",
+      "reg-3": "Зарегистрироваться",
+      "enter": "Войти",
+      "signup": "Зарегестрироваться",
+      "already-acc": "Уже есть аккаунт?"
+    },
+    "footer": {
+      "desc": "Используя кошелек \u0022APlus Wallet\u0022, вы становитесь участником криптовалютной системы \u0022Sarnado\u0022, которая предоставляет вам целый набор сервисов для удобной торговли, купли - продажи и обмена криптовалюты.",
+      "quick-rec": "Быстрый доступ",
+      "important-mail": "Важная рассылка",
+      "menu": {
+        "p-1": "На старт",
+        "p-2": "Toкены"
+      },
+      "descr-2": "Подпишитесь на нашу рассылку и получайте только актуальную информацию. Никакого спама!",
+      "enter-email": "Введите ваш Email адрес",
+      "follow": "Подписаться"
+    }
+  }
+}
